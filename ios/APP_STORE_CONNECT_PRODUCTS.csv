@@ -1,0 +1,13 @@
+Product ID,Display Name,Apple IAP Type,Suggested Danish Price,Description
+com.konhagengames.orbitzero.sparks500,Sparks Small,Consumable,9 kr,500 Sparks
+com.konhagengames.orbitzero.sparks1500,Sparks Standard,Consumable,19 kr,1500 Sparks
+com.konhagengames.orbitzero.sparks5000,Sparks Collection,Consumable,49 kr,5000 Sparks
+com.konhagengames.orbitzero.bundle.starter,Launch Kit,Consumable,19 kr,1200 Sparks plus three of each power-up
+com.konhagengames.orbitzero.bundle.defender,Defender Kit,Consumable,49 kr,4000 Sparks plus power-ups
+com.konhagengames.orbitzero.cosmetic.nordicgold,Nordic Gold,Non-Consumable,29 kr,Permanent gold ship and trail; cosmetic only
+com.konhagengames.orbitzero.cosmetic.frostglass,Frost Glass,Non-Consumable,29 kr,Permanent ice-toned ship and trail; cosmetic only
+com.konhagengames.orbitzero.cosmetic.copper,Copenhagen Copper,Non-Consumable,29 kr,Permanent copper-toned ship and trail; cosmetic only
+com.konhagengames.orbitzero.cosmetic.void,Void Carbon,Non-Consumable,39 kr,Permanent dark ship and pale trail; cosmetic only
+com.konhagengames.orbitzero.cosmetic.aurorawave,Aurora Wave,Non-Consumable,19 kr,Permanent double-ring perfect and victory effect
+com.konhagengames.orbitzero.cosmetic.prismburst,Prism Burst,Non-Consumable,19 kr,Permanent geometric perfect and victory effect
+com.konhagengames.orbitzero.cosmetic.stardust,Quiet Stardust,Non-Consumable,19 kr,Permanent particle perfect and victory effect

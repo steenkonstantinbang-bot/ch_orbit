@@ -1,0 +1,4 @@
+ORBIT ZERO 1.7 — KONHAGEN GAMES
+Open OrbitZero.xcodeproj in Xcode, set signing, enable Game Center, and run on two iPhones.
+Guide: docs/MULTIPLAYER_GAME_CENTER.md
+Multiplayer matchmaking requires Game Center setup and two Apple accounts.

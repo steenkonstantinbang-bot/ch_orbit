@@ -1,0 +1,34 @@
+{
+  "rules": {
+    ".read": false,
+    ".write": false,
+    "rooms": {
+      "$roomId": {
+        ".read": "auth != null && $roomId.matches(/^[A-HJ-NP-Z2-9]{6}$/)",
+        ".write": "auth != null && !data.exists() && $roomId.matches(/^[A-HJ-NP-Z2-9]{6}$/) && newData.child('hostUid').val() === auth.uid && newData.child('status').val() === 'waiting' && !newData.child('guestUid').exists()",
+        "guestUid": {
+          ".write": "auth != null && !data.exists() && newData.val() === auth.uid && data.parent().child('hostUid').exists() && data.parent().child('hostUid').val() !== auth.uid && data.parent().child('status').val() === 'waiting'",
+          ".validate": "newData.isString()"
+        },
+        "guestName": {
+          ".write": "auth != null && data.parent().child('guestUid').val() === auth.uid",
+          ".validate": "newData.isString() && newData.val().length <= 16"
+        },
+        "status": {
+          ".write": "auth != null && data.parent().child('hostUid').val() === auth.uid && data.val() === 'waiting' && newData.val() === 'playing' || auth != null && data.parent().child('hostUid').val() === auth.uid && data.val() === 'playing' && newData.val() === 'finished'",
+          ".validate": "newData.isString()"
+        },
+        "players": {
+          "host": {
+            ".write": "auth != null && data.parent().parent().child('hostUid').val() === auth.uid",
+            ".validate": "newData.hasChildren(['score','pressure','shields','attacks','lost','online','lastSeen']) && newData.child('score').isNumber() && newData.child('pressure').isNumber() && newData.child('shields').isNumber() && newData.child('attacks').isNumber() && newData.child('lost').isBoolean() && newData.child('online').isBoolean() && newData.child('lastSeen').isNumber()"
+          },
+          "guest": {
+            ".write": "auth != null && data.parent().parent().child('guestUid').val() === auth.uid",
+            ".validate": "newData.hasChildren(['score','pressure','shields','attacks','lost','online','lastSeen']) && newData.child('score').isNumber() && newData.child('pressure').isNumber() && newData.child('shields').isNumber() && newData.child('attacks').isNumber() && newData.child('lost').isBoolean() && newData.child('online').isBoolean() && newData.child('lastSeen').isNumber()"
+          }
+        }
+      }
+    }
+  }
+}

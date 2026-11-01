@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,maximum-scale=1,user-scalable=no">
+  <meta name="theme-color" content="#101417">
+  <meta name="description" content="ORBIT ZERO – Nordic orbital game by KONHAGEN GAMES. Play solo or challenge a friend online.">
+  <title>ORBIT ZERO · KONHAGEN GAMES</title>
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<div id="app">
+  <header class="topbar"><div class="brand-mark"><span class="round-logo">◎</span><span>ORBIT <b>ZERO</b></span></div><div class="brand-right"><span>v1.8</span><span class="wordmark">KONHAGEN GAMES</span></div></header>
+  <main>
+    <section class="screen active home" id="screen-home" aria-label="Forside">
+      <div class="home-hero">
+        <div class="emblem"><div class="emblem-ring"><div class="emblem-core"></div><span class="emblem-dot"></span></div></div>
+        <p class="eyebrow">KONHAGEN GAMES · COPENHAGEN</p>
+        <h1>Orbit <span>Zero</span></h1>
+        <p class="hero-text">One orbit. One chance.</p>
+      </div>
+      <div class="home-actions">
+        <button type="button" id="continue-btn" class="btn btn-primary"><span>Fortsæt kampagnen</span><span class="chevron">↗</span></button>
+        <div class="two-col"><button type="button" id="missions-btn" class="btn">Missioner <span>⌘</span></button><button type="button" id="arena-btn" class="btn accent-border">Online Duel <span>⚔</span></button></div>
+        <div class="two-col"><button type="button" id="endless-btn" class="btn">Endless <span>∞</span></button><button type="button" id="shop-btn" class="btn">Hangar <span>◇</span></button></div>
+      </div>
+      <div class="home-footer"><span id="home-progress">MISSION 01 / 40</span><span id="home-best">BEST · 0</span></div>
+    </section>
+    <section class="screen panel-screen" id="screen-missions" aria-label="Missioner">
+      <div class="screen-heading"><button class="back-btn" data-back aria-label="Tilbage">‹</button><div><span class="eyebrow">CAMPAIGN</span><h2>Collections</h2></div><span class="counter" id="stars-counter">0 / 120 ★</span></div>
+      <div class="collection-tabs" id="collection-tabs" aria-label="Vælg Collection"></div>
+      <div class="collection-intro" id="collection-intro"></div>
+      <div class="mission-list" id="mission-list"></div>
+    </section>
+    <section class="screen panel-screen" id="screen-brief" aria-label="Mission briefing">
+      <div class="screen-heading"><button class="back-btn" data-back aria-label="Tilbage">‹</button><div><span class="eyebrow" id="brief-collection">COLLECTION 01</span><h2 id="brief-title">Mission 01</h2></div></div>
+      <div class="brief-emblem"><div class="brief-circle"><span id="brief-mark">01</span></div></div>
+      <div class="brief-details"><span class="eyebrow">OBJECTIVES</span><p id="brief-text"></p><div class="brief-stats"><div><span>GATES</span><b id="brief-gates">8</b></div><div><span>DEFENSE</span><b id="brief-defend">4</b></div><div><span>ORBITS</span><b id="brief-orbits">3</b></div></div><p class="muted tiny">Hver fuld omgang tilføjer 2 computerpunkter. Ryd punkterne, før måleren fyldes.</p></div>
+      <button class="btn btn-primary big" id="launch-btn">Start mission <span>↗</span></button>
+    </section>
+    <section class="screen game-screen" id="screen-game" aria-label="Spil">
+      <div class="game-hud"><div class="hud-item"><span>MISSION</span><strong id="hud-mission">01</strong></div><div class="hud-item"><span>SCORE</span><strong id="hud-score">0</strong></div><div class="hud-item"><span>SHIELDS</span><strong id="hud-shields">● ● ●</strong></div><button type="button" class="hud-pause" id="pause-btn" aria-label="Pause">Ⅱ</button></div>
+      <div class="objective-line"><span id="objective-name">HIT GATES</span><span id="objective-progress">0 / 8</span></div>
+      <div class="pressure-row"><span>COMPUTER</span><div id="pressure-segments" class="segments"></div><strong id="pressure-num">0/12</strong></div>
+      <div class="game-field" id="game-field"><canvas id="orbit-canvas" width="720" height="720" aria-label="Orbital action game"></canvas><div id="game-toast" aria-live="polite"></div></div>
+      <div class="game-bottom"><div class="game-substats"><div>DEFENSE <b id="stat-defense">0 / 4</b></div><div>ORBITS <b id="stat-orbits">0 / 3</b></div><div>COMBO <b id="stat-combo">0</b></div></div><button id="jump-btn" type="button" class="btn btn-primary jump-btn">JUMP <span>◎</span></button><p class="tap-help">Tryk på banen eller JUMP når du rammer et mål</p></div>
+    </section>
+    <section class="screen panel-screen" id="screen-result" aria-label="Resultat"><div class="result-hero"><div id="result-icon">◎</div><span class="eyebrow" id="result-sub">MISSION COMPLETE</span><h2 id="result-title">Mission Clear</h2><p id="result-description">Stærkt gennemført.</p></div><div class="result-stats"><div><small>SCORE</small><b id="result-score">0</b></div><div><small>REWARD</small><b id="result-reward">★</b></div></div><div class="result-buttons"><button type="button" class="btn btn-primary" id="result-primary">Næste mission <span>↗</span></button><button type="button" class="btn" id="result-retry">Spil igen</button><button type="button" class="btn subtle" id="result-home">Til forsiden</button></div></section>
+    <section class="screen panel-screen" id="screen-arena" aria-label="Online Duel"><div class="screen-heading"><button class="back-btn" data-back aria-label="Tilbage">‹</button><div><span class="eyebrow">MULTIPLAYER</span><h2>Orbit Arena</h2></div><span class="pill">1 v 1</span></div><div class="duel-symbol">◎ <span>vs</span> ◎</div><p class="muted center">Spil mod en ven, uanset hvor I er. Send et invitationslink, eller indtast samme rumkode.</p><div class="online-status" id="online-status">Tjekker onlineforbindelse…</div><label class="input-label" for="player-name">Dit kaldenavn</label><input id="player-name" maxlength="16" placeholder="Pilot" autocomplete="nickname"><button type="button" id="create-room" class="btn btn-primary big">Opret privat kamp <span>＋</span></button><div class="separator">ELLER</div><label class="input-label" for="room-input">Indtast rumkode</label><div class="join-row"><input id="room-input" maxlength="6" placeholder="XXXXXX" autocapitalize="characters" spellcheck="false"><button type="button" id="join-room" class="btn">Deltag ↗</button></div><p class="muted tiny" id="online-help"></p></section>
+    <section class="screen panel-screen" id="screen-lobby" aria-label="Multiplayer lobby"><div class="screen-heading"><button class="back-btn" id="leave-lobby" aria-label="Forlad rum">‹</button><div><span class="eyebrow">PRIVATE ARENA</span><h2>Duellobby</h2></div></div><div class="room-code"><span>DIN RUMKODE</span><strong id="lobby-code">------</strong></div><button class="btn" type="button" id="copy-link">Kopiér invitationslink <span>↗</span></button><div class="lobby-players"><div><span>01 · DIG</span><b id="lobby-self">Pilot</b><small class="ready">KLAR</small></div><div><span>02 · MODSTANDER</span><b id="lobby-opponent">Venter på spiller…</b><small id="opponent-state">VENTER</small></div></div><p class="muted center" id="lobby-message">Send linket til din ven. Når begge er med, kan værten starte kampen.</p><button id="start-duel" type="button" class="btn btn-primary big" disabled>Start duel <span>↗</span></button></section>
+    <section class="screen panel-screen" id="screen-shop" aria-label="Hangar"><div class="screen-heading"><button class="back-btn" data-back aria-label="Tilbage">‹</button><div><span class="eyebrow">CUSTOMIZATION</span><h2>Signature Hangar</h2></div></div><div class="hangar-ship">⌁<div>ORBIT ZERO</div></div><p class="center muted">Skift udseende på dit rumskib. Webudgaven har kun visuelle prøver; Apple-køb er tilgængelige i iPhone-appen, ikke på GitHub Pages.</p><div class="skin-grid" id="skin-grid"></div></section>
+    <section class="screen panel-screen" id="screen-pause" aria-label="Pause"><div class="result-hero"><div class="result-icon-small">Ⅱ</div><span class="eyebrow">MISSION CONTROL</span><h2>Paused</h2><p>Din orbit står stille.</p></div><div class="result-buttons"><button class="btn btn-primary" id="resume-btn">Fortsæt <span>↗</span></button><button class="btn" id="restart-btn">Start forfra</button><button class="btn subtle" id="quit-btn">Forlad spil</button></div></section>
+  </main>
+  <footer class="footer"><span>DESIGNED IN COPENHAGEN</span><span>© KONHAGEN GAMES</span></footer>
+  <div id="snackbar" role="status" aria-live="polite" class="snackbar" hidden></div>
+</div>
+<script type="module" src="./game.js"></script>
+</body>
+</html>

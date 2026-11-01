@@ -1,0 +1,93 @@
+// !$*UTF8*$!
+{
+  archiveVersion = 1;
+  classes = {};
+  objectVersion = 56;
+  objects = {
+/* Begin PBXBuildFile section */
+    000000000000000000000065 /* OrbitZeroApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000001 /* OrbitZeroApp.swift */; };
+    000000000000000000000066 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000002 /* ContentView.swift */; };
+    000000000000000000000067 /* OrbitGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000003 /* OrbitGame.swift */; };
+    000000000000000000000068 /* OrbitScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000004 /* OrbitScene.swift */; };
+    000000000000000000000069 /* AudioFeedback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000005 /* AudioFeedback.swift */; };
+    00000000000000000000006A /* SparkStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000006 /* SparkStore.swift */; };
+    00000000000000000000006B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000007 /* Assets.xcassets */; };
+    00000000000000000000006C /* start.wav in Resources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000008 /* start.wav */; };
+    00000000000000000000006D /* success.wav in Resources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000009 /* success.wav */; };
+    00000000000000000000006E /* perfect.wav in Resources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000000A /* perfect.wav */; };
+    00000000000000000000006F /* failure.wav in Resources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000000B /* failure.wav */; };
+    000000000000000000000070 /* boss.wav in Resources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000000C /* boss.wav */; };
+    000000000000000000000071 /* OrbitCosmetics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000000D /* OrbitCosmetics.swift */; };
+    000000000000000000000072 /* OrbitMultiplayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000000E /* OrbitMultiplayer.swift */; };
+    000000000000000000000073 /* DuelArenaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000000F /* DuelArenaView.swift */; };
+    000000000000000000001500 /* intercept.wav in Resources */ = {isa = PBXBuildFile; fileRef = 000000000000000000001600 /* intercept.wav */; };
+    000000000000000000001501 /* deploy.wav in Resources */ = {isa = PBXBuildFile; fileRef = 000000000000000000001601 /* deploy.wav */; };
+    000000000000000000001502 /* surge.wav in Resources */ = {isa = PBXBuildFile; fileRef = 000000000000000000001602 /* surge.wav */; };
+    000000000000000000001503 /* shift.wav in Resources */ = {isa = PBXBuildFile; fileRef = 000000000000000000001603 /* shift.wav */; };
+    000000000000000000001504 /* bomb.wav in Resources */ = {isa = PBXBuildFile; fileRef = 000000000000000000001604 /* bomb.wav */; };
+    000000000000000000001505 /* victory.wav in Resources */ = {isa = PBXBuildFile; fileRef = 000000000000000000001605 /* victory.wav */; };
+    000000000000000000001506 /* focus.wav in Resources */ = {isa = PBXBuildFile; fileRef = 000000000000000000001606 /* focus.wav */; };
+    000000000000000000001507 /* orbit_ambient.wav in Resources */ = {isa = PBXBuildFile; fileRef = 000000000000000000001607 /* orbit_ambient.wav */; };
+    000000000000000000001508 /* boss_protocol.wav in Resources */ = {isa = PBXBuildFile; fileRef = 000000000000000000001608 /* boss_protocol.wav */; };
+/* End PBXBuildFile section */
+/* Begin PBXFileReference section */
+    000000000000000000000001 /* OrbitZeroApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrbitZeroApp.swift; sourceTree = "<group>"; };
+    000000000000000000000002 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+    000000000000000000000003 /* OrbitGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrbitGame.swift; sourceTree = "<group>"; };
+    000000000000000000000004 /* OrbitScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrbitScene.swift; sourceTree = "<group>"; };
+    000000000000000000000005 /* AudioFeedback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioFeedback.swift; sourceTree = "<group>"; };
+    000000000000000000000006 /* SparkStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SparkStore.swift; sourceTree = "<group>"; };
+    000000000000000000000007 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+    000000000000000000000008 /* start.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = start.wav; sourceTree = "<group>"; };
+    000000000000000000000009 /* success.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = success.wav; sourceTree = "<group>"; };
+    00000000000000000000000A /* perfect.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = perfect.wav; sourceTree = "<group>"; };
+    00000000000000000000000B /* failure.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = failure.wav; sourceTree = "<group>"; };
+    00000000000000000000000C /* boss.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = boss.wav; sourceTree = "<group>"; };
+    000000000000000000000310 /* OrbitZero.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OrbitZero.app; sourceTree = BUILT_PRODUCTS_DIR; };
+    00000000000000000000000D /* OrbitCosmetics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrbitCosmetics.swift; sourceTree = "<group>"; };
+    00000000000000000000000E /* OrbitMultiplayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrbitMultiplayer.swift; sourceTree = "<group>"; };
+    00000000000000000000000F /* DuelArenaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DuelArenaView.swift; sourceTree = "<group>"; };
+    000000000000000000001600 /* intercept.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = intercept.wav; sourceTree = "<group>"; };
+    000000000000000000001601 /* deploy.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = deploy.wav; sourceTree = "<group>"; };
+    000000000000000000001602 /* surge.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = surge.wav; sourceTree = "<group>"; };
+    000000000000000000001603 /* shift.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = shift.wav; sourceTree = "<group>"; };
+    000000000000000000001604 /* bomb.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = bomb.wav; sourceTree = "<group>"; };
+    000000000000000000001605 /* victory.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = victory.wav; sourceTree = "<group>"; };
+    000000000000000000001606 /* focus.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = focus.wav; sourceTree = "<group>"; };
+    000000000000000000001607 /* orbit_ambient.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = orbit_ambient.wav; sourceTree = "<group>"; };
+    000000000000000000001608 /* boss_protocol.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = boss_protocol.wav; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+/* Begin PBXFrameworksBuildPhase section */
+    000000000000000000000309 /* Frameworks */ = {isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+/* End PBXFrameworksBuildPhase section */
+/* Begin PBXGroup section */
+    000000000000000000000303 = {isa = PBXGroup; children = (000000000000000000000304 /* OrbitZero */, 000000000000000000000305 /* Products */); sourceTree = "<group>"; };
+    000000000000000000000304 /* OrbitZero */ = {isa = PBXGroup; children = ( 000000000000000000000001 /* OrbitZeroApp.swift */, 000000000000000000000002 /* ContentView.swift */, 000000000000000000000003 /* OrbitGame.swift */, 000000000000000000000004 /* OrbitScene.swift */, 000000000000000000000005 /* AudioFeedback.swift */, 000000000000000000000006 /* SparkStore.swift */, 00000000000000000000000D /* OrbitCosmetics.swift */, 00000000000000000000000E /* OrbitMultiplayer.swift */, 00000000000000000000000F /* DuelArenaView.swift */, 000000000000000000000007 /* Assets.xcassets */, 000000000000000000000306 /* Audio */ ); path = OrbitZero; sourceTree = "<group>"; };
+    000000000000000000000306 /* Audio */ = {isa = PBXGroup; children = ( 000000000000000000000008 /* start.wav */, 000000000000000000000009 /* success.wav */, 00000000000000000000000A /* perfect.wav */, 00000000000000000000000B /* failure.wav */, 00000000000000000000000C /* boss.wav */, 000000000000000000001600 /* intercept.wav */, 000000000000000000001601 /* deploy.wav */, 000000000000000000001602 /* surge.wav */, 000000000000000000001603 /* shift.wav */, 000000000000000000001604 /* bomb.wav */, 000000000000000000001605 /* victory.wav */, 000000000000000000001606 /* focus.wav */, 000000000000000000001607 /* orbit_ambient.wav */, 000000000000000000001608 /* boss_protocol.wav */ ); path = Audio; sourceTree = "<group>"; };
+    000000000000000000000305 /* Products */ = {isa = PBXGroup; children = (000000000000000000000310 /* OrbitZero.app */); name = Products; sourceTree = "<group>"; };
+/* End PBXGroup section */
+/* Begin PBXNativeTarget section */
+    000000000000000000000302 /* OrbitZero */ = {isa = PBXNativeTarget; buildConfigurationList = 000000000000000000000312 /* Build configuration list for PBXNativeTarget "OrbitZero" */; buildPhases = (000000000000000000000307 /* Sources */, 000000000000000000000309 /* Frameworks */, 000000000000000000000308 /* Resources */); buildRules = (); dependencies = (); name = OrbitZero; productName = OrbitZero; productReference = 000000000000000000000310 /* OrbitZero.app */; productType = "com.apple.product-type.application"; };
+/* End PBXNativeTarget section */
+/* Begin PBXProject section */
+    000000000000000000000301 /* Project object */ = {isa = PBXProject; attributes = { BuildIndependentTargetsInParallel = YES; LastUpgradeCheck = 1600; TargetAttributes = { 000000000000000000000302 = { CreatedOnToolsVersion = 16.0; SystemCapabilities = { com.apple.GameCenter = { enabled = 1; }; }; }; }; }; buildConfigurationList = 000000000000000000000311 /* Build configuration list for PBXProject "OrbitZero" */; compatibilityVersion = "Xcode 14.0"; developmentRegion = en; hasScannedForEncodings = 0; knownRegions = (en, Base); mainGroup = 000000000000000000000303; productRefGroup = 000000000000000000000305 /* Products */; projectDirPath = ""; projectRoot = ""; targets = (000000000000000000000302 /* OrbitZero */); };
+/* End PBXProject section */
+/* Begin PBXResourcesBuildPhase section */
+    000000000000000000000308 /* Resources */ = {isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = ( 00000000000000000000006B /* Assets.xcassets in Resources */, 00000000000000000000006C /* start.wav in Resources */, 00000000000000000000006D /* success.wav in Resources */, 00000000000000000000006E /* perfect.wav in Resources */, 00000000000000000000006F /* failure.wav in Resources */, 000000000000000000000070 /* boss.wav in Resources */, 000000000000000000001500 /* intercept.wav in Resources */, 000000000000000000001501 /* deploy.wav in Resources */, 000000000000000000001502 /* surge.wav in Resources */, 000000000000000000001503 /* shift.wav in Resources */, 000000000000000000001504 /* bomb.wav in Resources */, 000000000000000000001505 /* victory.wav in Resources */, 000000000000000000001506 /* focus.wav in Resources */, 000000000000000000001507 /* orbit_ambient.wav in Resources */, 000000000000000000001508 /* boss_protocol.wav in Resources */ ); runOnlyForDeploymentPostprocessing = 0; };
+/* End PBXResourcesBuildPhase section */
+/* Begin PBXSourcesBuildPhase section */
+    000000000000000000000307 /* Sources */ = {isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = ( 000000000000000000000065 /* OrbitZeroApp.swift in Sources */, 000000000000000000000066 /* ContentView.swift in Sources */, 000000000000000000000067 /* OrbitGame.swift in Sources */, 000000000000000000000068 /* OrbitScene.swift in Sources */, 000000000000000000000069 /* AudioFeedback.swift in Sources */, 00000000000000000000006A /* SparkStore.swift in Sources */, 000000000000000000000071 /* OrbitCosmetics.swift in Sources */, 000000000000000000000072 /* OrbitMultiplayer.swift in Sources */, 000000000000000000000073 /* DuelArenaView.swift in Sources */ ); runOnlyForDeploymentPostprocessing = 0; };
+/* End PBXSourcesBuildPhase section */
+/* Begin XCBuildConfiguration section */
+    000000000000000000000313 /* Debug */ = {isa = XCBuildConfiguration; buildSettings = { ALWAYS_SEARCH_USER_PATHS = NO; CLANG_ENABLE_MODULES = YES; DEBUG_INFORMATION_FORMAT = dwarf; ENABLE_TESTABILITY = YES; GCC_OPTIMIZATION_LEVEL = 0; SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG; SWIFT_OPTIMIZATION_LEVEL = "-Onone"; IPHONEOS_DEPLOYMENT_TARGET = 17.0; SDKROOT = iphoneos; }; name = Debug; };
+    000000000000000000000314 /* Release */ = {isa = XCBuildConfiguration; buildSettings = { ALWAYS_SEARCH_USER_PATHS = NO; CLANG_ENABLE_MODULES = YES; DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym"; ENABLE_TESTABILITY = NO; GCC_OPTIMIZATION_LEVEL = s; SWIFT_ACTIVE_COMPILATION_CONDITIONS = ""; SWIFT_OPTIMIZATION_LEVEL = "-O"; IPHONEOS_DEPLOYMENT_TARGET = 17.0; SDKROOT = iphoneos; }; name = Release; };
+    000000000000000000000315 /* Debug */ = {isa = XCBuildConfiguration; buildSettings = { ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon; CODE_SIGN_STYLE = Automatic; CODE_SIGN_ENTITLEMENTS = OrbitZero/OrbitZero.entitlements; CURRENT_PROJECT_VERSION = 10; GENERATE_INFOPLIST_FILE = YES; INFOPLIST_KEY_CFBundleDisplayName = "ORBIT ZERO"; INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES; INFOPLIST_KEY_UILaunchScreen_Generation = YES; INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait; IPHONEOS_DEPLOYMENT_TARGET = 17.0; MARKETING_VERSION = 1.7; PRODUCT_NAME = OrbitZero; PRODUCT_BUNDLE_IDENTIFIER = com.konhagengames.orbitzero; SUPPORTED_PLATFORMS = "iphoneos iphonesimulator"; SWIFT_VERSION = 5.0; TARGETED_DEVICE_FAMILY = 1; }; name = Debug; };
+    000000000000000000000316 /* Release */ = {isa = XCBuildConfiguration; buildSettings = { ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon; CODE_SIGN_STYLE = Automatic; CODE_SIGN_ENTITLEMENTS = OrbitZero/OrbitZero.entitlements; CURRENT_PROJECT_VERSION = 10; GENERATE_INFOPLIST_FILE = YES; INFOPLIST_KEY_CFBundleDisplayName = "ORBIT ZERO"; INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES; INFOPLIST_KEY_UILaunchScreen_Generation = YES; INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait; IPHONEOS_DEPLOYMENT_TARGET = 17.0; MARKETING_VERSION = 1.7; PRODUCT_NAME = OrbitZero; PRODUCT_BUNDLE_IDENTIFIER = com.konhagengames.orbitzero; SUPPORTED_PLATFORMS = "iphoneos iphonesimulator"; SWIFT_VERSION = 5.0; TARGETED_DEVICE_FAMILY = 1; }; name = Release; };
+/* End XCBuildConfiguration section */
+/* Begin XCConfigurationList section */
+    000000000000000000000311 /* Build configuration list for PBXProject "OrbitZero" */ = {isa = XCConfigurationList; buildConfigurations = (000000000000000000000313 /* Debug */, 000000000000000000000314 /* Release */); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+    000000000000000000000312 /* Build configuration list for PBXNativeTarget "OrbitZero" */ = {isa = XCConfigurationList; buildConfigurations = (000000000000000000000315 /* Debug */, 000000000000000000000316 /* Release */); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+/* End XCConfigurationList section */
+  };
+  rootObject = 000000000000000000000301 /* Project object */;
+}
